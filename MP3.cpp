@@ -59,6 +59,13 @@ void MP3::next()
     send_cmd(cmd_buf);
 }
 
+void MP3::previous() {
+    cmd_buf[1]=0x02;
+    cmd_buf[2]=0xA6;
+    send_cmd(cmd_buf);
+}
+
+
 void MP3::pause()
 {
     cmd_buf[1]=0x02;
