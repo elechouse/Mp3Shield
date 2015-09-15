@@ -28,7 +28,10 @@
 #define __TYPE_REDEFINE
 typedef uint8_t u8;
 typedef int8_t  s8;
-typedef uint16_t u16;
+/****************************************************
+ * for older IDE before 1.6, please enable line 34
+ * *************************************************/
+//typedef uint16_t u16;
 typedef int16_t  s16;
 typedef uint32_t u32;
 typedef int32_t  s32;
